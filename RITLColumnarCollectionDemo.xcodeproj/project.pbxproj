@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		DB024FC01FF09E110099A005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB024FBF1FF09E110099A005 /* AppDelegate.swift */; };
 		DB024FC21FF09E110099A005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB024FC11FF09E110099A005 /* ViewController.swift */; };
-		DB024FC51FF09E110099A005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB024FC31FF09E110099A005 /* Main.storyboard */; };
+		DB024FC51FF09E110099A005 /* RITLMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB024FC31FF09E110099A005 /* RITLMain.storyboard */; };
 		DB024FC71FF09E110099A005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB024FC61FF09E110099A005 /* Assets.xcassets */; };
 		DB024FCA1FF09E110099A005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB024FC81FF09E110099A005 /* LaunchScreen.storyboard */; };
+		DB024FD21FF0CD430099A005 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB024FD11FF0CD430099A005 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB024FBC1FF09E110099A005 /* ProjectTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB024FBC1FF09E110099A005 /* RITLColumnarCollectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RITLColumnarCollectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB024FBF1FF09E110099A005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB024FC11FF09E110099A005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB024FC41FF09E110099A005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB024FC41FF09E110099A005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RITLMain.storyboard; sourceTree = "<group>"; };
 		DB024FC61FF09E110099A005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB024FC91FF09E110099A005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB024FCB1FF09E110099A005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB024FD11FF0CD430099A005 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +40,7 @@
 		DB024FB31FF09E110099A005 = {
 			isa = PBXGroup;
 			children = (
-				DB024FBE1FF09E110099A005 /* ProjectTest */,
+				DB024FBE1FF09E110099A005 /* RITLColumnarCollectionDemo */,
 				DB024FBD1FF09E110099A005 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +48,31 @@
 		DB024FBD1FF09E110099A005 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB024FBC1FF09E110099A005 /* ProjectTest.app */,
+				DB024FBC1FF09E110099A005 /* RITLColumnarCollectionDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DB024FBE1FF09E110099A005 /* ProjectTest */ = {
+		DB024FBE1FF09E110099A005 /* RITLColumnarCollectionDemo */ = {
 			isa = PBXGroup;
 			children = (
 				DB024FBF1FF09E110099A005 /* AppDelegate.swift */,
 				DB024FC11FF09E110099A005 /* ViewController.swift */,
-				DB024FC31FF09E110099A005 /* Main.storyboard */,
+				DB024FC31FF09E110099A005 /* RITLMain.storyboard */,
 				DB024FC61FF09E110099A005 /* Assets.xcassets */,
 				DB024FC81FF09E110099A005 /* LaunchScreen.storyboard */,
 				DB024FCB1FF09E110099A005 /* Info.plist */,
+				DB024FD11FF0CD430099A005 /* CollectionViewCell.swift */,
 			);
-			path = ProjectTest;
+			path = RITLColumnarCollectionDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DB024FBB1FF09E110099A005 /* ProjectTest */ = {
+		DB024FBB1FF09E110099A005 /* RITLColumnarCollectionDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB024FCE1FF09E110099A005 /* Build configuration list for PBXNativeTarget "ProjectTest" */;
+			buildConfigurationList = DB024FCE1FF09E110099A005 /* Build configuration list for PBXNativeTarget "RITLColumnarCollectionDemo" */;
 			buildPhases = (
 				DB024FB81FF09E110099A005 /* Sources */,
 				DB024FB91FF09E110099A005 /* Frameworks */,
@@ -79,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = ProjectTest;
+			name = RITLColumnarCollectionDemo;
 			productName = ProjectTest;
-			productReference = DB024FBC1FF09E110099A005 /* ProjectTest.app */;
+			productReference = DB024FBC1FF09E110099A005 /* RITLColumnarCollectionDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DB024FB71FF09E110099A005 /* Build configuration list for PBXProject "ProjectTest" */;
+			buildConfigurationList = DB024FB71FF09E110099A005 /* Build configuration list for PBXProject "RITLColumnarCollectionDemo" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DB024FBB1FF09E110099A005 /* ProjectTest */,
+				DB024FBB1FF09E110099A005 /* RITLColumnarCollectionDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -125,7 +128,7 @@
 			files = (
 				DB024FCA1FF09E110099A005 /* LaunchScreen.storyboard in Resources */,
 				DB024FC71FF09E110099A005 /* Assets.xcassets in Resources */,
-				DB024FC51FF09E110099A005 /* Main.storyboard in Resources */,
+				DB024FC51FF09E110099A005 /* RITLMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,18 +141,19 @@
 			files = (
 				DB024FC21FF09E110099A005 /* ViewController.swift in Sources */,
 				DB024FC01FF09E110099A005 /* AppDelegate.swift in Sources */,
+				DB024FD21FF0CD430099A005 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DB024FC31FF09E110099A005 /* Main.storyboard */ = {
+		DB024FC31FF09E110099A005 /* RITLMain.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DB024FC41FF09E110099A005 /* Base */,
 			);
-			name = Main.storyboard;
+			name = RITLMain.storyboard;
 			sourceTree = "<group>";
 		};
 		DB024FC81FF09E110099A005 /* LaunchScreen.storyboard */ = {
@@ -276,9 +280,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S4NWFZC5J;
-				INFOPLIST_FILE = ProjectTest/Info.plist;
+				INFOPLIST_FILE = RITLColumnarCollectionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yue.ProjectTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yue.RITLColumnarCollectionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,9 +296,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S4NWFZC5J;
-				INFOPLIST_FILE = ProjectTest/Info.plist;
+				INFOPLIST_FILE = RITLColumnarCollectionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yue.ProjectTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yue.RITLColumnarCollectionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,7 +309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DB024FB71FF09E110099A005 /* Build configuration list for PBXProject "ProjectTest" */ = {
+		DB024FB71FF09E110099A005 /* Build configuration list for PBXProject "RITLColumnarCollectionDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DB024FCC1FF09E110099A005 /* Debug */,
@@ -312,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB024FCE1FF09E110099A005 /* Build configuration list for PBXNativeTarget "ProjectTest" */ = {
+		DB024FCE1FF09E110099A005 /* Build configuration list for PBXNativeTarget "RITLColumnarCollectionDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DB024FCF1FF09E110099A005 /* Debug */,
