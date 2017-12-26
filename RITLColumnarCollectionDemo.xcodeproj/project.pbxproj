@@ -12,11 +12,16 @@
 		DB024FC51FF09E110099A005 /* RITLMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB024FC31FF09E110099A005 /* RITLMain.storyboard */; };
 		DB024FC71FF09E110099A005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB024FC61FF09E110099A005 /* Assets.xcassets */; };
 		DB024FCA1FF09E110099A005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB024FC81FF09E110099A005 /* LaunchScreen.storyboard */; };
-		DB024FD21FF0CD430099A005 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB024FD11FF0CD430099A005 /* CollectionViewCell.swift */; };
-		DB024FD41FF111080099A005 /* preview.gif in Resources */ = {isa = PBXBuildFile; fileRef = DB024FD31FF111080099A005 /* preview.gif */; };
+		DB3471621FF1D98200EB8C92 /* RITLColumnarCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3471611FF1D98200EB8C92 /* RITLColumnarCollectionCell.swift */; };
+		DB3471651FF1DB0300EB8C92 /* preview.gif in Resources */ = {isa = PBXBuildFile; fileRef = DB3471641FF1DB0300EB8C92 /* preview.gif */; };
+		DB3471671FF24A0200EB8C92 /* RITLColumnar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3471661FF24A0200EB8C92 /* RITLColumnar.swift */; };
+		E3894F34306C5B4AC039C850 /* Pods_RITLColumnarCollectionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDDA8A0CB10898AC9DBDCF4 /* Pods_RITLColumnarCollectionDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15E08D9540A0BAFF40158EC7 /* Pods-RITLColumnarCollectionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RITLColumnarCollectionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RITLColumnarCollectionDemo/Pods-RITLColumnarCollectionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1DDDA8A0CB10898AC9DBDCF4 /* Pods_RITLColumnarCollectionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RITLColumnarCollectionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CA4DE36EA35259AC2299C2 /* Pods-RITLColumnarCollectionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RITLColumnarCollectionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RITLColumnarCollectionDemo/Pods-RITLColumnarCollectionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DB024FBC1FF09E110099A005 /* RITLColumnarCollectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RITLColumnarCollectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB024FBF1FF09E110099A005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB024FC11FF09E110099A005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +29,9 @@
 		DB024FC61FF09E110099A005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB024FC91FF09E110099A005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB024FCB1FF09E110099A005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB024FD11FF0CD430099A005 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		DB024FD31FF111080099A005 /* preview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = preview.gif; sourceTree = "<group>"; };
+		DB3471611FF1D98200EB8C92 /* RITLColumnarCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RITLColumnarCollectionCell.swift; sourceTree = "<group>"; };
+		DB3471641FF1DB0300EB8C92 /* preview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = preview.gif; sourceTree = "<group>"; };
+		DB3471661FF24A0200EB8C92 /* RITLColumnar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RITLColumnar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,18 +39,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3894F34306C5B4AC039C850 /* Pods_RITLColumnarCollectionDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D806B6D2A3E4916657EB964 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA4DE36EA35259AC2299C2 /* Pods-RITLColumnarCollectionDemo.debug.xcconfig */,
+				15E08D9540A0BAFF40158EC7 /* Pods-RITLColumnarCollectionDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DB024FB31FF09E110099A005 = {
 			isa = PBXGroup;
 			children = (
-				DB024FD31FF111080099A005 /* preview.gif */,
+				DB3471631FF1DB0300EB8C92 /* Preview */,
+				DB3471601FF1D98200EB8C92 /* RITLColumnarCollectionView */,
 				DB024FBE1FF09E110099A005 /* RITLColumnarCollectionDemo */,
 				DB024FBD1FF09E110099A005 /* Products */,
+				1D806B6D2A3E4916657EB964 /* Pods */,
+				E9750C2B711698B039BBA391 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,9 +84,33 @@
 				DB024FC61FF09E110099A005 /* Assets.xcassets */,
 				DB024FC81FF09E110099A005 /* LaunchScreen.storyboard */,
 				DB024FCB1FF09E110099A005 /* Info.plist */,
-				DB024FD11FF0CD430099A005 /* CollectionViewCell.swift */,
 			);
 			path = RITLColumnarCollectionDemo;
+			sourceTree = "<group>";
+		};
+		DB3471601FF1D98200EB8C92 /* RITLColumnarCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DB3471661FF24A0200EB8C92 /* RITLColumnar.swift */,
+				DB3471611FF1D98200EB8C92 /* RITLColumnarCollectionCell.swift */,
+			);
+			path = RITLColumnarCollectionView;
+			sourceTree = "<group>";
+		};
+		DB3471631FF1DB0300EB8C92 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				DB3471641FF1DB0300EB8C92 /* preview.gif */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		E9750C2B711698B039BBA391 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDA8A0CB10898AC9DBDCF4 /* Pods_RITLColumnarCollectionDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB024FCE1FF09E110099A005 /* Build configuration list for PBXNativeTarget "RITLColumnarCollectionDemo" */;
 			buildPhases = (
+				D258F7B2E6BDA17F03983E84 /* [CP] Check Pods Manifest.lock */,
 				DB024FB81FF09E110099A005 /* Sources */,
 				DB024FB91FF09E110099A005 /* Frameworks */,
 				DB024FBA1FF09E110099A005 /* Resources */,
+				4DD1FF44DD0A2668CAFBF504 /* [CP] Embed Pods Frameworks */,
+				59962725760409463259BF81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +176,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB024FCA1FF09E110099A005 /* LaunchScreen.storyboard in Resources */,
+				DB3471651FF1DB0300EB8C92 /* preview.gif in Resources */,
 				DB024FC71FF09E110099A005 /* Assets.xcassets in Resources */,
-				DB024FD41FF111080099A005 /* preview.gif in Resources */,
 				DB024FC51FF09E110099A005 /* RITLMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DD1FF44DD0A2668CAFBF504 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RITLColumnarCollectionDemo/Pods-RITLColumnarCollectionDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RITLColumnarCollectionDemo/Pods-RITLColumnarCollectionDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59962725760409463259BF81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RITLColumnarCollectionDemo/Pods-RITLColumnarCollectionDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D258F7B2E6BDA17F03983E84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RITLColumnarCollectionDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB024FB81FF09E110099A005 /* Sources */ = {
@@ -144,8 +244,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB024FC21FF09E110099A005 /* ViewController.swift in Sources */,
+				DB3471671FF24A0200EB8C92 /* RITLColumnar.swift in Sources */,
 				DB024FC01FF09E110099A005 /* AppDelegate.swift in Sources */,
-				DB024FD21FF0CD430099A005 /* CollectionViewCell.swift in Sources */,
+				DB3471621FF1D98200EB8C92 /* RITLColumnarCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +381,7 @@
 		};
 		DB024FCF1FF09E110099A005 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3CA4DE36EA35259AC2299C2 /* Pods-RITLColumnarCollectionDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +398,7 @@
 		};
 		DB024FD01FF09E110099A005 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E08D9540A0BAFF40158EC7 /* Pods-RITLColumnarCollectionDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

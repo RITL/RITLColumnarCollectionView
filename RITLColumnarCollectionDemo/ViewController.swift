@@ -25,7 +25,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    private var scales = [0.4,0.6,0.8,0.3,1.0,0.6,0.7,0.6,0.9,0.4,0.6,0.4,0.2]
+    private var scales = [0.9,0.5,0.3,0.2]
+    
+    private var topColors = [0xFA8568.ritl_color,
+                             0xEF9D28.ritl_color,
+                             0xF4D766.ritl_color,
+                             0x71EF69.ritl_color]
+    
+    private var bottomColors = [0xF85644.ritl_color,
+                                0xF7854C.ritl_color,
+                                0xFFBA08.ritl_color,
+                                0x2ABD00.ritl_color]
+    
+    private var titles = ["B轮\n1亿","A轮\n5000万","Pre-A\n1000万","种子轮\n500万"]
 
 }
 
@@ -41,29 +53,18 @@ extension ViewController: UICollectionViewDataSource,UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell: CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+        let cell: RITLColumnarCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! RITLColumnarCollectionCell
         
-        cell.changedHeight(CGFloat(scales[indexPath.item]))
+        let item = indexPath.item
+        
+        cell.updateData(RITLCollectionDataUpdater(title:titles[item]))
+        
+        cell.updateDisplay(RITLCollectionDisplayUpdater(rate: CGFloat(scales[item]),
+                                                        topColor: topColors[item],
+                                                        bottomColor: bottomColors[item]))
         cell.startAnimated()
         
         return cell
-    }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        
-//        let cell = collectionView.cellForItem(at: indexPath)
-        
-//        cell?.startAnimated()
-        print("\(indexPath) is finished")
-    }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        
-//        let cell = collectionView.cellForItem(at: indexPath)
-        
-//        cell?.startAnimated()
     }
     
 }
